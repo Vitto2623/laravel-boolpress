@@ -42,6 +42,11 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+
+.home-link{
+    text-decoration: none;
+    color: blue;
+}
 
 </style>

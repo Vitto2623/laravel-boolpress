@@ -1,18 +1,20 @@
 <template>
     <div>
-        <PostList/>
+        <Nav />
+        <Main/>
     </div>
 </template>
 
 <script>
 
-import PostList from '../components/PostList.vue'
-
+import Main from '../components/Main.vue'
+import Nav from '../components/Nav.vue'
 export default {
     name: 'App',
 
     components: {
-        PostList,
+        Main,
+        Nav
     }
 }
 </script>
