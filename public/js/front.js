@@ -3347,7 +3347,7 @@ var render = function () {
             "nav",
             {
               staticClass:
-                "d-flex justify-content-center align-items-center m-4",
+                "d-flex justify-content-center align-items-center p-4",
             },
             [
               _c(

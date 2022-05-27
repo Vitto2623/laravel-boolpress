@@ -2,7 +2,7 @@
     <div class="container-fluid d-flex justify-content-center align-items-center">
         <div class="row">
             <div class="col-12">
-                <nav class="d-flex justify-content-center align-items-center m-4">
+                <nav class="d-flex justify-content-center align-items-center p-4">
                     <router-link :to="{name: 'about-us'}" class="home-link"><h4 class=" me-5">About us</h4></router-link>
                     <router-link :to="{name: 'post-list'}" class="home-link"><h4>Lista dei post</h4></router-link>
                 </nav>
