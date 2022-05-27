@@ -1,9 +1,13 @@
 <template>
-    <div>
-        <nav class="d-flex justify-content-center align-items-center">
-            <router-link :to="{name: 'about-us'}" class="home-link"><h2 class=" me-5">About us</h2></router-link>
-            <router-link :to="{name: 'post-list'}" class="home-link"><h2>Lista dei post</h2></router-link>
-        </nav>
+    <div class="container-fluid d-flex justify-content-center align-items-center">
+        <div class="row">
+            <div class="col-12">
+                <nav class="d-flex justify-content-center align-items-center m-4">
+                    <router-link :to="{name: 'about-us'}" class="home-link"><h4 class=" me-5">About us</h4></router-link>
+                    <router-link :to="{name: 'post-list'}" class="home-link"><h4>Lista dei post</h4></router-link>
+                </nav>
+            </div>
+        </div>
     </div>
 </template>
 

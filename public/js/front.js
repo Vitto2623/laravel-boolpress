@@ -1938,6 +1938,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'Nav'
 });
@@ -3330,26 +3334,46 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c(
-      "nav",
-      { staticClass: "d-flex justify-content-center align-items-center" },
-      [
-        _c(
-          "router-link",
-          { staticClass: "home-link", attrs: { to: { name: "about-us" } } },
-          [_c("h2", { staticClass: " me-5" }, [_vm._v("About us")])]
-        ),
-        _vm._v(" "),
-        _c(
-          "router-link",
-          { staticClass: "home-link", attrs: { to: { name: "post-list" } } },
-          [_c("h2", [_vm._v("Lista dei post")])]
-        ),
-      ],
-      1
-    ),
-  ])
+  return _c(
+    "div",
+    {
+      staticClass:
+        "container-fluid d-flex justify-content-center align-items-center",
+    },
+    [
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-12" }, [
+          _c(
+            "nav",
+            {
+              staticClass:
+                "d-flex justify-content-center align-items-center m-4",
+            },
+            [
+              _c(
+                "router-link",
+                {
+                  staticClass: "home-link",
+                  attrs: { to: { name: "about-us" } },
+                },
+                [_c("h4", { staticClass: " me-5" }, [_vm._v("About us")])]
+              ),
+              _vm._v(" "),
+              _c(
+                "router-link",
+                {
+                  staticClass: "home-link",
+                  attrs: { to: { name: "post-list" } },
+                },
+                [_c("h4", [_vm._v("Lista dei post")])]
+              ),
+            ],
+            1
+          ),
+        ]),
+      ]),
+    ]
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
