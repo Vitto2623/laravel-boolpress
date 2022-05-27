@@ -19,7 +19,6 @@ class PostController extends Controller
         $post = Post::all();
 
         
-
         return response()->json(
         [
             'success' => true,
