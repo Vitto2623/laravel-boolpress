@@ -18,9 +18,6 @@
                 </div>
             </div>
         </div>
-        <div class="col-12">
-            <a class="btn btn-dark">Invia una mail</a>
-        </div>
     </div>
 </div>
 @endsection
