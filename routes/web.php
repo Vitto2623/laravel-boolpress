@@ -23,6 +23,10 @@ Route::middleware('auth')->namespace('Admin')->prefix('admin')->name('admin.')->
 });
 
 
+Route::get('/contacts', 'ContactsController@contact')->name('guest.contact');
+
+Route::post('/contacts', 'ContactsController@contactStore')->name('guest.store');
+
 Route::get("{any?}", function(){
     return view('guest.home');
 })->where('any', '.*');

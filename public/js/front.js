@@ -3410,7 +3410,7 @@ var staticRenderFns = [
     return _c("div", { staticClass: "container-fluid" }, [
       _c("div", { staticClass: "row text-center mt-3" }, [
         _c("div", { staticClass: "col-12" }, [
-          _c("p", { staticClass: " fs-3" }, [
+          _c("p", { staticClass: " fs-3 m-5" }, [
             _vm._v(
               "\n                At WordPress.com, our mission is to democratize publishing and eCommerce one website at a time. We're a hosted version of the open source software, WordPress. Because when you have the freedom to create, express yourself, and earn money online, the impossible becomes business as usual.\n            "
             ),
