@@ -14,7 +14,7 @@ class ContactsController extends Controller
 
     public function contactStore(Request $request){
 
-        Mail::to($request->mailMessage)->send(new SendNewMail());
+        Mail::to($request->mailMessage)->send(new SendNewMail($request->guestName, $request->mailMessage, $request->guestMessage));
 
         return redirect()->route('guests.index')->with('message', "Grazie $request->guestName! Il messaggio è stato inviato correttamente");
     }

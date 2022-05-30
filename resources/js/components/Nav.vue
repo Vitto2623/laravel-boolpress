@@ -4,7 +4,8 @@
             <div class="col-12">
                 <nav class="d-flex justify-content-center align-items-center p-4">
                     <router-link :to="{name: 'about-us'}" class="home-link"><h4 class=" me-5">About us</h4></router-link>
-                    <router-link :to="{name: 'post-list'}" class="home-link"><h4>Lista dei post</h4></router-link>
+                    <router-link :to="{name: 'post-list'}" class="home-link me-5"><h4>Lista dei post</h4></router-link>
+                    <a href="/contacts" class="home-link"><h4>Contattaci</h4></a>
                 </nav>
             </div>
         </div>

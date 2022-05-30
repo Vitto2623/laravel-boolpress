@@ -7,8 +7,14 @@
     <title>Mail BoolPress</title>
 </head>
 <body>
-    
-    <h1>Grazie Per Averci Contattato</h1>
+
+    <h1> {{$author}} ti ha contattato da WordPress</h1>
+
+    <h1>La mail alla quale vorrebbe essere contattato è: {{$authorEmail}}</h1>
+
+    <p>
+        {{$guestMessage}}
+    </p>
 
 </body>
 </html>

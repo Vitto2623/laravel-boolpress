@@ -1942,6 +1942,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'Nav'
 });
@@ -3365,11 +3366,13 @@ var render = function () {
               _c(
                 "router-link",
                 {
-                  staticClass: "home-link",
+                  staticClass: "home-link me-5",
                   attrs: { to: { name: "post-list" } },
                 },
                 [_c("h4", [_vm._v("Lista dei post")])]
               ),
+              _vm._v(" "),
+              _vm._m(0),
             ],
             1
           ),
@@ -3378,7 +3381,16 @@ var render = function () {
     ]
   )
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("a", { staticClass: "home-link", attrs: { href: "/contacts" } }, [
+      _c("h4", [_vm._v("Contattaci")]),
+    ])
+  },
+]
 render._withStripped = true
 
 

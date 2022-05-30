@@ -17,7 +17,9 @@
         </div>
     </div>
 
-    <div class="container-fluid text-center">
+    <div id="root"></div>
+
+    <div class="container-fluid text-center mt-5">
         <div class="row">
             <div class="col-12">
                 @if(Session::has('message'))
@@ -26,8 +28,6 @@
             </div>
         </div>
     </div>
-
-    <div id="root"></div>
 @endsection
 
 
