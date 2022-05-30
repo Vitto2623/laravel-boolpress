@@ -8,7 +8,7 @@
                 <div class="card mb-3" style="max-width: 740px;">
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <img src="{{$post->image_url}}" class="img-fluid rounded-start" style="width: 100%; height: 100%" alt="post_image">
+                            <img src="{{asset('storage/' . $post->image_url)}}" class="img-fluid rounded-start" style="width: 100%; height: 100%" alt="post_image">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">

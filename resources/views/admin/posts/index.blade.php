@@ -10,7 +10,11 @@
                     <div class="card mb-3" style="max-width: 740px;">
                         <div class="row g-0">
                             <div class="col-md-4">
-                                <img src="{{$post->image_url}}" class="img-fluid rounded-start" style="width: 100%; height: 100%" alt="post_image">
+                                @if (str_starts_with($post->image_url, 'https://') || str_starts_with($post->image_url, 'http://') )
+                                    <img src="{{$post->image_url}}" class="img-fluid rounded-start" style="width: 100%; height: 100%" alt="post_image">
+                                @else
+                                    <img src="{{asset('storage/' . $post->image_url)}}" class="img-fluid rounded-start" style="width: 100%; height: 100%" alt="post_image">
+                                @endif
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">

@@ -7,7 +7,7 @@
         <div class="container-fluid">
             <div class="row d-flex justify-content-center align-items-center p-5">
 
-                <form class="row g-3" action="{{route('admin.posts.store')}}" method="post">
+                <form class="row g-3" action="{{route('admin.posts.store')}}" method="post" enctype="multipart/form-data">
                     @csrf
                     <div class="col-md-6">
                         <label for="title" class="form-label">Titolo Post</label>
@@ -18,10 +18,9 @@
                         <textarea class="form-control" name="content" id="description" cols="500" rows="10" placeholder="...."></textarea>
                     </div>
 
-                    <div class="col-12 d-flex justify-content-center align-items-center flex-column">
-                        <label for="image_url" class="form-label">Aggiungi immagine</label>
-                        <input type="text" class="form-control w-25" name="image_url" id="price" placeholder="inserisci un'immagine">
-                    </div>
+                    <label for="image_url" class="fs-3">Carica un immagine</label>
+                    <input type="file" name="image_url" id="image_url">
+
 
                         <div class="col-6">
                             <label for="category">Seleziona una categoria per il post:</label>

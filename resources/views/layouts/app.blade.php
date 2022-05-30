@@ -20,7 +20,7 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light  shadow-sm my-header fixed-top">
             <div class="container">
-                <a class="navbar-brand special" style="color:blue"  href="{{ route('home') }}">
+                <a class="navbar-brand special" style="color:blue"  href="{{ route('guests.index') }}">
                     Laravel BoolPress
                 </a>
 

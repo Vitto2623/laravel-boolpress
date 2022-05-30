@@ -7,6 +7,7 @@ use App\Models\Category;
 use App\Models\Post;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Storage;
 
 class PostController extends Controller
 {
@@ -46,6 +47,7 @@ class PostController extends Controller
         $post->title = $data['title'];
         $post->content = $data['content'];
         $post->image_url = $data['image_url'];
+        $post->image_url = Storage::put('uploads', $data['image_url']);
         $post->save();
         $post->categories()->sync($data['category']);
 

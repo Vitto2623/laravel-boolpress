@@ -1996,6 +1996,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'Post',
   props: {
@@ -3446,10 +3449,19 @@ var render = function () {
         "div",
         { staticClass: "card my-card", staticStyle: { width: "18rem" } },
         [
-          _c("img", {
-            staticClass: "card-img-top h-50",
-            attrs: { src: _vm.post.image_url, alt: _vm.post.id },
-          }),
+          _vm.post.image_url.startsWith("https://") ||
+          _vm.post.image_url.startsWith("http://")
+            ? _c("img", {
+                staticClass: "card-img-top h-50",
+                attrs: { src: _vm.post.image_url, alt: _vm.post.id },
+              })
+            : _c("img", {
+                staticClass: "card-img-top h-50",
+                attrs: {
+                  src: "../storage/" + _vm.post.image_url,
+                  alt: _vm.post.id,
+                },
+              }),
           _vm._v(" "),
           _c("div", { staticClass: "card-body" }, [
             _c("h5", { staticClass: "card-title" }, [
